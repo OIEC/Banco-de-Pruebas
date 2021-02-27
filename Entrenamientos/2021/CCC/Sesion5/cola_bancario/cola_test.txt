@@ -1,0 +1,7 @@
+6
+C CARLOS 8
+C JORGE 5
+S J 10
+C JUAN 7
+A
+A
