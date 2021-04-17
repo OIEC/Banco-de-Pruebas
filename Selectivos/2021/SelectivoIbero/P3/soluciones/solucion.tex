@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+
+\setlength{\headheight}{1cm}
+\setlength{\parindent}{0pt}
+
+\usepackage[utf8]{inputenc} %para que salgan tildes y la ñ
+\usepackage{fancyhdr} %para introducir encabezado y manipularlo
+\usepackage{etoolbox,xcolor}
+\usepackage{asymptote}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{graphicx} %para permitir cortar imágenes insertadas
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+%\usepackage[margin=1in]{geometry}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{parskip}
+\usepackage{wasysym}
+\allowdisplaybreaks
+\usepackage{background}
+%\usepackage{showframe} %permite mostrar los bordes de la página
+
+\backgroundsetup{
+    scale=1,
+    %color=black,
+    opacity=0.1,
+    angle=0,
+    contents={\includegraphics{OIEC_Logo.png}}
+}
+
+
+\definecolor{omeccolor}{RGB}{0,44,153}
+
+\usepackage[top=0.4cm, bottom=1cm, left=1.5cm, right=1.5cm, headheight=2.5cm, headsep=0.2cm, footskip=0.5cm, includeheadfoot]{geometry} %configura los márgenes del documento
+\hypersetup{colorlinks, citecolor=omeccolor, filecolor=omeccolor, linkcolor=omeccolor, urlcolor=omeccolor} %para configurar hipervínculos manejados con el package hyperref
+
+\renewcommand{\headrulewidth}{0.4pt}
+\newcommand{\headrulecolor}[1]{\patchcmd{\headrule}{\hrule}{\color{#1}\hrule}{}{}}
+\headrulecolor{omeccolor}
+
+\pagestyle{fancy}
+\lhead{
+	\includegraphics[height=2.25cm]{OIEC_Texto}\hspace{1cm}
+	%se inserta y se manipula imagen
+	}
+\rhead{
+	\large{\bf Olimpiada Informática Ecuatoriana - Selectivo Iberoamericana}\\
+	\large{\it Solución Problema 3}\\
+} %se inserta y se manipula imagen
+\cfoot{}
+\lfoot{\tiny{\thepage}}
+\rfoot{\tiny{Olimpiada Informática Ecuatoriana}\\\tiny{OIEC} - \textcolor{blue}{\underline{\tiny{\url{http://oiec-inf.org}}}}}
+\lfoot{}
+
+%se define el environment
+\newenvironment{problema}{
+	\addtocounter{contador_p}{1}
+	\textcolor{omeccolor}{\bf Problema \arabic{contador_p}.}
+}{\par\addvspace{\baselineskip}
+	\vspace{0.2cm}}
+
+\newcommand{\portalweb}{
+	http://oiec-inf.org
+}
+
+\newcounter{contador_p} %crea un contador
+\setcounter{contador_p}{0} %define el valor de un contador creado
+
+\newcommand{\CC}{\mathbb{C}} %define el comando "\ZZ" para que ingrese el símbolo para el conjunto de los enteros
+\newcommand{\RR}{\mathbb{R}} %define el comando "\RR" para que ingrese el símbolo para el conjunto de los reales
+\newcommand{\QQ}{\mathbb{Q}} %define el comando "\RR" para que ingrese el símbolo para el conjunto de los reales
+\newcommand{\ZZ}{\mathbb{Z}} %define el comando "\ZZ" para que ingrese el símbolo para el conjunto de los enteros
+\newcommand{\NN}{\mathbb{N}} %define el comando "\ZZ" para que ingrese el símbolo para el conjunto de los enteros
+\newcommand{\suchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;} %para ingresar el símbolo "tal que" del mismo tamaño que la expresión
+\def\sen{\mathop{\mbox{\normalfont sen}}\nolimits} %define el comando "\sen" para que ingrese el operador seno sin que parezca variable
+\def\cos{\mathop{\mbox{\normalfont cos}}\nolimits} %define el comando "\cos" para que ingrese el operador coseno sin que parezca variable
+\def\tan{\mathop{\mbox{\normalfont tan}}\nolimits} %define el comando "\tan" para que ingrese el operador tangente sin que parezca variable
+\def\mcd{\mathop{\mbox{\normalfont mcd}}\nolimits} %define el comando "\mcd" para que ingrese el operador de máximo común divisor sin que parezca variable
+\def\mcm{\mathop{\mbox{\normalfont mcm}}\nolimits} %define el comando "\mcm" para que ingrese el operador de mínimo común múltiplo sin que parezca variable
+\def\cm{\operatorname{cm}}
+\def\km{\operatorname{km}}
+\def\kmh{\operatorname{km/h}}
+
+\newcommand{\solucion}{\par
+    \addvspace{0.5\baselineskip}
+    \textit{\underline{Solución:}}\par}
+
+\newcommand{\p}[1]{\textbf{Problema #1}}
+\newcommand{\s}{\textit{Soluci\'on: }}
+
+
+\begin{document}
+
+\textbf{Descripción}
+
+Estás atrapado en un sueño del cuál te cuesta despertar. En este sueño tan bizarro, te encuentras en un tablero de ajedrez de $1000 \times 1000$. Lo curioso es que estás subido encima de la pieza del caballo en la casilla $(x_1, y_1)$. Por algún motivo, existe una casilla especial  $(x_2, y_2)$ donde se encuentra la pieza del rey contrincante. Tú sabes que esa pieza no se puede mover y tu meta es apoderarte de esa casilla llegando a ella para derrocar al rey contrincante. Es la única forma que puedes despertar de esta pesadilla. Dicho esto, ahora te preguntas cúal será el mínimo número de pasos que tú y tu caballo deben dar para llegar hacia la pieza del rey contrincante.
+
+\textbf{Entrada}
+
+2 líneas con 2 números enteros cada uno. La primera línea tiene dos números enteros $(x_1, y_1)$, separados por un espacio, que representan la casilla donde empiezas.
+
+La segunda línea tiene dos números enteros $(x_2, y_2)$, separados por un espacio, que representa la casilla del rey contrincante.
+
+\textbf{Salida}
+
+Un solo número, que representa la mínima cantidad de movimientos que deben dar tú y tu caballo para llegar desde la casilla del inicio hasta la del rey contrincante.
+
+
+\textbf{Notas}
+\begin{itemize}
+\item Las posiciones comienzan en 0, es decir, $(0, 0)$ representa la esquina inferior izquierda del tablero.
+
+\item El caballo de ajedrez se mueve en forma de $L$, es decir, desde una casilla con posición $(x, y)$ puede moverse a 8 posibles casillas, con coordenadas $(x \pm 1, y \pm 2)$  o $(x \pm 2, y \pm 1)$ (siempre y cuando la casilla esté dentro del tablero).
+\end{itemize}
+
+\s
+\\
+Este problema es un ejemplo clásico del uso del algoritmo de búsqueda en amplitud (BFS). La idea principal es desarrollar la búsqueda en amplitud guardando la distancia desde la casilla inicial hacia cada casilla. Empezamos desde la casilla inicial, y realizamos el recorrido en amplitud considerando casillas adyacentes válidas, las casillas a las que se puede llegar con un movimiento en $L$ y están dentro del tablero. Al llegar por primera vez a la casilla deseada, imprimimos la distancia calculada y terminamos el algoritmo.
+
+
+\end{document}
