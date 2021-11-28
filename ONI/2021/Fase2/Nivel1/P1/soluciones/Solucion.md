@@ -1,0 +1,4 @@
+# Solución
+Podemos iterar para leer los valores del motor, volante y de una llanta. Luego multiplicamos el valor de la llanta por 4 y sumamos ese valor al motor y al volante para obtener la suma total de los valores de una tienda. Como los límites del problema nos dicen que el valor más alto que puede asumir cada variable es 500, definimos una variable referencia que valga 3001 (1+500+500+500*4) de tal forma que sea mayor a cualquier valor posible. 
+Luego comparamos el total que se obtiene por cada línea, con la referencia y en caso de ser menor, la nueva referencia será ese valor. Además, guardamos el índice del bucle, que corresponde al número de tienda, en una variable, de forma que esa será la variable que imprimiremos al final. Todo esto para garantizar que en todas las líneas, solo cambie su valor en caso de encontrar un nuevo mínimo.
+Finalmente imprimimos el valor de la variable que contiene el mínimo índice del bucle +1, ya que este empieza desde 0. 
