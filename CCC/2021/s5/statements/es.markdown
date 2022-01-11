@@ -39,12 +39,12 @@ No existe ninguna secuencia $[A_1, A_2]$ tal que MCD de $[A_1, A_2]$ es 2 y el M
 - $1 \leq M \leq 150 000$ 
 - $1 \leq Z_i \leq 16$
 
-#Subtarea 1 [13 puntos]
+#Subtarea 1 [20 puntos]
 $N \leq 2000$, $M \leq 2000$, $Zi \leq 2$.
 
-#Subtarea 2 [13 puntos]
+#Subtarea 2 [27 puntos]
 $N \leq 2000$, $M \leq 2000$, $Zi \leq 16$.
 
-#Subtarea 3 [54 puntos]
+#Subtarea 3 [53 puntos]
 Sin restricciones.
 
