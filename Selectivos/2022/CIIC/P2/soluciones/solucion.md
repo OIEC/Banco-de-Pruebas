@@ -1,0 +1,4 @@
+# Solución
+Una manera no óptima de resolver el problema es iterar sobre los monstruos e intentar derrotarlos uno por uno. Si llegamos al final, empezamos de nuevo. Realizamos esto repetidamente hasta que el nivel con el que empezamos a iterar no cambie. En ese momento nos rendimos e imprimimos ese valor. Esta solución tiene complejidad $O(n^2)$ y solo permite resolver el problema bajo el tiempo estipulado para casos pequeños.
+
+La clave para resolverlo de forma óptima es dándose cuenta que siempre conviene atacar a los monstruos de menor a mayor nivel. Por lo tanto, una solución eficiente consiste en ordenar los niveles de los monstruos de menor a mayor y luego ver si se puede ir derrotando a cada uno de los monstruos. En el momento en que un monstruo ya no pueda ser derrotado se debe imprimir automáticamente el nivel de fuerza alcanzado y continuar con el caso siguiente.
