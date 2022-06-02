@@ -1,4 +1,4 @@
-#Solución
+# Solución
 Sabemos que Alicia tiene `n` caramelos de distintos sabores y puede comer un máximo de `n/2` caramelos. 
 El máximo número de sabores que ella puede probar se obtiene cuando prueba uno de cada sabor, pero hay que tomar en cuenta la restricción impuesta por el doctor, que es `n/2` en total. Por lo que la respuesta es el mayor entre la cantidad de sabores y `n/2`.
 
