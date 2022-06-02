@@ -9,7 +9,7 @@ Para obtener el M.C.D. de un conjunto `A = {a_1, a_2, ..., a_n}`, primero obtene
 `a * b = M.C.D.(a,b) * M.C.M.(a,b)`
 
 # Sub-caso 1
-Para resolver el primer caso, podemos obtener el M.C.D. entre dos números de una manera muy ineficiente. Basicamente, para obtener el M.C.D. entre `a` y `b`, probamos cada valor entre `min(a,b)` y 1 y devolvemos la primera incidencia. 
+Para resolver el primer caso, podemos obtener el M.C.D. entre dos números de una manera muy ineficiente. Básicamente, para obtener el M.C.D. entre `a` y `b`, probamos cada valor entre `min(a,b)` y 1 y devolvemos la primera incidencia. 
 
 # Sub-caso 2
-Para resolver el segundo caso, usamos una manera mucho más eficiente que es el algoritmo de Euclides. Basicamente resuelve el problema de hallar el M.C.D. de forma recursiva usando la formula `M.C.D.(a,b)=M.C.D.(a%b,b)` donde `a%b` es el residuo de que se tiene al dividir `a` para `b`. Se lo hace hasta llegar a que uno de los dos valores es 1.
+Para resolver el segundo caso, usamos una manera mucho más eficiente que es el algoritmo de Euclides. Básicamente resuelve el problema de hallar el M.C.D. de forma recursiva usando la formula `M.C.D.(a,b)=M.C.D.(a%b,b)` donde `a%b` es el residuo de que se tiene al dividir `a` para `b`. Se lo hace hasta llegar a que uno de los dos valores es 1.
