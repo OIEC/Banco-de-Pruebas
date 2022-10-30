@@ -1,0 +1,2 @@
+Leemos las diez alturas de la entrada y las guardamos en un arreglo para poder iterar sobre ellas. Luego iteramos una por una guardando la mínima y máxima altura vista hasta ese entonces en dos variables separadas. Adicionalmente, acumulamos la suma de las alturas en una tercera variable adicional.
+Finalmente, imprimimos la menor, mayor altura y la suma de estas dividida entre diez (promedio) en líneas separadas.
