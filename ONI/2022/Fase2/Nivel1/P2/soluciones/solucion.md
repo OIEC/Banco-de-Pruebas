@@ -1,0 +1,3 @@
+Podemos leer los números uno por uno e identificar con un `if` si el número de la posición $i$ es igual a $i$. En caso de ser así, incrementamos un contador ya que nos indica que el número no cambió de posición luego del reordenamiento.
+
+Para simplificar un poco el código, podríamos utilizar un bucle `for` y así ejecutar el mismo código cinco veces, una vez para cada número utilizando la variable `i` del mismo ciclo `for` en la comparación.

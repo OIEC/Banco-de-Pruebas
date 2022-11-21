@@ -1,0 +1,3 @@
+Creamos y leemos la entrada en tres arreglos $X$, $Y$ y $R$ para las coordenadas $x_i$, $y_i$ y radios $r_i$ de los $n$ círculos. Luego para cada círculo, iteramos sobre todos los demás círculos contando la cantidad de círculos que no lo intersectan con el usando la fórmula 
+$(x_i - x_j)^2 + (y_i - y_j)^2 > (r_i + r_j)^2$ que determina si dos círculos $i$, $j$ no se intersectan.
+Si para un círculo $i$ tenemos $n-1$ círculos que no lo intersectan, entonces incrementamos el contador de círculos especiales en 1. Si hacemos este conteo para cada círculo, al final nuestro contador tendrá la cantidad total de círculos especiales.
