@@ -1,0 +1,5 @@
+En C++, podemos leer la palabra de la entrada como un arreglo de tipo char (char[]) o como una std::string, dependiendo de nuestra conveniencia. El criterio para que una palabra de 10 letras sea un palíndromo equivale a que el primer caracter sea igual al último, el segundo al noveno, el tercero al octavo, el cuarto al séptimo y el quinto al sexto. Con esto en mente tenemos dos opciones:
+
+La primera opción es realizar el intercambio del primero y quinto caracter usando una variable temporal de tipo char obteniendo así la cadena resultante. Luego procedemos a evaluar si esta cadena resultante es un palíndromo usando el criterio descrito previamente.
+
+La segunda opción es usar el criterio previo directamente sin hacer el intercambio. En el condicional simplemente intercambiamos el primer caracter con el quinto y eso ímplicitamente realiza el intercambio descrito y la verificación de palíndromo en una sola operación.

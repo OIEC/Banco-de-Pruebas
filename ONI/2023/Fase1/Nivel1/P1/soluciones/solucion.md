@@ -1,0 +1,1 @@
+Leemos los valores de $B$, $P$ y $H$ de la entrada, e imprimimos el valor de $(2 \times B) + (P \times H)$. Podemos guardarlo en una variable separada o imprimirlo directamente.
