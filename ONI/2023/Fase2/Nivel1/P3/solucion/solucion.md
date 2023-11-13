@@ -1,0 +1,3 @@
+Para la primera subtarea, es fácil ver que el recorrido óptimo siempre es ir en línea recta visitando los locales $A$, $B$ y $C$ en ese orden. La distancia total es igual a la distancia entre la casa de Fernando y el local $C$, que es equivalente a la diferencia entre las segundas coordenadas de ambas posiciones.
+
+Para la segunda subtarea, generalizamos la idea anterior usando el hecho que la distancia entre dos posiciones con coordenadas $(x_1, y_1)$ y $(x_2, y_2)$ en una malla cuadriculada es $|x_1 - x_2| + |y_1 - y_2|$. Primero podemos calcular las 6 distancias entre todos los pares de posiciones. Con estos valores podemos calcular la distancia total de cada una de las 6 rutas posibles para luego encontrar la mínima.
