@@ -18,12 +18,6 @@ La salida es un único entero representando la longitud en metros de cinta que n
 0 0 0 0 0
 ||output
 9
-||end
-
-<br />
-![Figura1](figura1.jpg)
-<br />
-
 ||input
 7
 0 0 1 1 0 1 0
@@ -33,6 +27,12 @@ La salida es un único entero representando la longitud en metros de cinta que n
 ||description
 Bocchi necesita 5 metros de cinta para una zona pintada y 3 metros para las otras dos zonas distintas pintadas.
 ||end
+
+A continuación se muestran los dos ejemplos:
+
+<br />
+![Figura1](figura1.jpg)
+<br />
 
 <br />
 ![Figura2](figura2.jpg)
