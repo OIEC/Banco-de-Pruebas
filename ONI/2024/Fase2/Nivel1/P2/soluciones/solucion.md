@@ -1,0 +1,1 @@
+Se pueden hacer tres condicionales dependiendo si todos los ángulos son menores a 90, un ángulo es igual a 90 o un ángulo es mayor a 90. La subtarea 2 implica leer muchas entradas en un ciclo e imprimir usando los condicionales descritos dentro del ciclo.

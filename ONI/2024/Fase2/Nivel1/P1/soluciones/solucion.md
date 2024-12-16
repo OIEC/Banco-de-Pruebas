@@ -1,0 +1,1 @@
+Evaluamos cada caracter con un condicional para verificar si es vocal y lo imprimimos a la salida si lo es.
