@@ -1,0 +1,1 @@
+El perímetro de un polígono es la suma de sus lados. Como nuestro polígono es regular entonces todos sus lados serán iguales. Finalmente, dicha suma estará dada por el producto $N \cdot L.$

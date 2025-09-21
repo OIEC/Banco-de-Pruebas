@@ -1,0 +1,1 @@
+Creamos un vector o un arreglo que vaya almacenando las victorias de todos los jugadores. Una vez sumamos todas las victorias a cada jugador, imprimimos en orden las victorias y finalmente hacemos una búsqueda del campeón y lo imprimimos también.

@@ -1,0 +1,1 @@
+Podemos resolver recorriendo una vez la cadena y contando las veces que aparece cada color. Como queremos minimizar el número de vagones que queremos repintar, encontramos el numero máximo de vagones con el mismo color para no pintar esos vagones. Después, pintamos el resto.

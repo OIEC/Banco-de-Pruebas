@@ -1,0 +1,1 @@
+Como la entrada siempre tiene exactamente tres caracteres, basta con leer la cadena y mostrar sus caracteres en orden inverso.

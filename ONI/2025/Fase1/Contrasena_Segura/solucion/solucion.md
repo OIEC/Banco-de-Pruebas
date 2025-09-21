@@ -1,0 +1,1 @@
+Se lee la contraseña y para cada caracter se revisa si cumple con alguno de los criterios necesarios. Por cada caracter que cumpla algún requisito, se actualiza una variable booleana. Al final, se revisa que todas las variables booleanas sean verdaderas, y además que la longitud sea mayor o igual a 8.
