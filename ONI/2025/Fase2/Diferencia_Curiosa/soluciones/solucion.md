@@ -1,0 +1,1 @@
+Iteramos sobre el arreglo buscando el impar más grande y el par más pequeño. Luego de esa iteración simplemente los restamos e imprimimos el resultado.

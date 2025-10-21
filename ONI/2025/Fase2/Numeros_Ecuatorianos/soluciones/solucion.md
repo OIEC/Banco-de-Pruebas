@@ -1,0 +1,1 @@
+Se verifica que el dígito en la posición final es 5, 3 o 9 con un condicional.

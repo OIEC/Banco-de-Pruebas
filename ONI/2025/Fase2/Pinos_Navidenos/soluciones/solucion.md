@@ -1,0 +1,1 @@
+En la dimensión de $M$ casillas entran $\frac{M}{2}$ subtableros de $2 \times 2$. De la misma forma para la dimensión de $N$ casillas. En total entran $\frac{M}{2} \times $\frac{N}{2}$ subtableros de $2 \times 2$.
